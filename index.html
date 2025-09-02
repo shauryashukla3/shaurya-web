@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINEGROUND - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2b0057;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 45px;
+      margin: 20px 0;
+      color: #fff;
+    }
+
+    .hero {
+      padding: 60px 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin-top: 20px;
+      font-size: 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+      background-size: 400%;
+      animation: rgbGlow 5s linear infinite;
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes rgbGlow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="store.html">Store</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to MINEGROUND</h1>
+    <p>The ultimate Minecraft experience. Join our server, unlock ranks, earn coins, and explore endless fun.</p>
+    <a href="store.html" class="btn">Visit Store</a>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h2>Custom Ranks</h2>
+      <p>Unlock exclusive perks and commands with our unique rank system.</p>
+    </div>
+    <div class="card">
+      <h2>Coin System</h2>
+      <p>Earn and spend coins for upgrades, cosmetics, and more.</p>
+    </div>
+    <div class="card">
+      <h2>Active Community</h2>
+      <p>Play with hundreds of players in a fun and safe environment.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MINEGROUND | Play Now: <b>play.mineground.net</b></p>
+  </footer>
+</body>
+</html>
