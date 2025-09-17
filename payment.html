@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ShreyMC - Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Options</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="payment.html">Payment</a>
+            <a href="server-info.html">Server Info</a>
+            <a href="item-price.html">Item Price</a>
+            <a href="ticket.html">Ticket</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Donate or Buy Ranks</h2>
+        <p>Support the server and get amazing perks!</p>
+        <form action="https://your-payment-gateway.com/checkout" method="POST">
+            <label for="amount">Amount (USD):</label>
+            <input type="number" id="amount" name="amount" min="1" required><br><br>
+
+            <label for="rank">Select Rank:</label>
+            <select id="rank" name="rank">
+                <option value="vip">VIP</option>
+                <option value="premium">Premium</option>
+                <option value="elite">Elite</option>
+            </select><br><br>
+
+            <button type="submit">Proceed to Pay</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ShreyMC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
